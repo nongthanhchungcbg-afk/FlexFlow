@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root { font-family: "DM Sans", Arial, sans-serif; color: #182b32; background: #f4f7f6; font-synthesis: none; text-rendering: optimizeLegibility; --green: #147d68; --muted: #718184; }
+* { box-sizing: border-box; }
+body { min-width: 320px; margin: 0; background: radial-gradient(ellipse at 82% 0%, rgba(189,229,214,.4), transparent 34rem), #f4f7f6; }
+.site-header { height: 68px; padding: 0 max(24px, calc((100% - 920px) / 2)); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(221,232,227,.8); }
+.brand { display: flex; align-items: center; gap: 10px; color: #182b32; font: 800 15px "Manrope", Arial, sans-serif; text-decoration: none; }
+.brand-mark { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 9px; color: white; background: var(--green); }
+.course-label, .eyebrow, .frame-label, .direction { font-size: 9px; font-weight: 700; letter-spacing: 1.2px; }
+.course-label { color: #71827f; }
+.page { width: min(860px, calc(100% - 36px)); margin: 0 auto; }
+.intro { padding: 38px 0 20px; }
+.eyebrow { margin: 0 0 7px; color: var(--green); }
+h1, h2, p { margin-top: 0; }
+h1, .card-heading h2 { font-family: "Manrope", Arial, sans-serif; }
+h1 { margin-bottom: 8px; font-size: clamp(31px, 5vw, 41px); letter-spacing: -1.6px; line-height: 1.2; }
+h1 span { color: var(--green); }
+.intro > p:last-child { margin-bottom: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.formula { display: flex; align-items: center; gap: 11px; padding: 12px 15px; border: 1px solid #d8eae3; border-radius: 10px; background: #edf7f3; }
+.formula-icon { display: grid; width: 30px; height: 30px; flex: 0 0 30px; place-items: center; border-radius: 8px; color: var(--green); background: #d9f0e7; font: 700 17px Georgia, serif; }
+.formula p { flex: 1; margin: 0; color: #365b50; font-size: 12px; }
+.formula p strong { color: #145d4e; font-family: Consolas, monospace; }
+.formula > code { padding: 6px 8px; border: 1px solid #e0eae6; border-radius: 6px; color: #57736a; background: rgba(255,255,255,.75); font: 10px Consolas, monospace; white-space: nowrap; }
+.examples { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-top: 13px; }
+.example-card { min-width: 0; padding: 19px; border: 1px solid #e7eeea; border-radius: 13px; background: white; box-shadow: 0 10px 32px rgba(29,66,56,.04); }
+.card-heading { display: flex; align-items: center; justify-content: space-between; gap: 9px; }
+.card-heading .eyebrow { margin-bottom: 4px; font-size: 8px; }
+.card-heading h2 { margin: 0; font-size: 18px; letter-spacing: -.4px; }
+.badge { flex: 0 0 auto; padding: 6px 7px; border-radius: 5px; color: #477764; background: #e5f4ed; font-size: 8px; font-weight: 700; letter-spacing: .5px; }
+.reverse-badge { color: #7c6c49; background: #f5f0df; }
+.description { min-height: 37px; margin: 9px 0 11px; color: var(--muted); font-size: 10px; line-height: 1.55; }
+.demo-frame { padding: 10px; border: 1px solid #e7eeea; border-radius: 8px; background: #f8faf9; }
+.frame-label { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 5px; margin-bottom: 8px; color: #82918d; font-size: 8px; }
+.frame-label code { color: #57736a; font: 8px Consolas, monospace; letter-spacing: 0; }
+.container { display: flex; flex-flow: row nowrap; gap: 7px; width: 100%; min-height: 101px; padding: 9px; overflow-x: auto; border: 1px dashed #8cb7a9; border-radius: 7px; background-color: #edf6f2; background-image: radial-gradient(#d6e7e0 .7px,transparent .7px); background-size: 12px 12px; }
+.reverse-demo { flex-flow: row-reverse nowrap; }
+.item { display: flex; min-width: 93px; flex: 1 0 93px; flex-direction: column; align-items: center; justify-content: center; gap: 7px; border: 1px solid #d6e8e1; border-radius: 7px; color: #1a5548; background: linear-gradient(135deg,#fff,#f1faf6); box-shadow: 0 3px 9px rgba(28,91,72,.05); font-size: 10px; font-weight: 700; }
+.item > span { display: grid; width: 24px; height: 24px; place-items: center; border-radius: 7px; color: var(--green); background: #e4f4ef; font-size: 8px; }
+.direction { display: flex; align-items: center; gap: 8px; margin-top: 8px; color: #82918d; font-size: 8px; }
+.direction .arrow { color: var(--green); font-size: 17px; letter-spacing: 0; }
+.direction span:last-child { margin-left: auto; color: #718184; font-weight: 500; letter-spacing: 0; }
+.reverse-direction .arrow { color: #98793b; }
+.code { margin: 10px 0 0; padding: 11px 12px; overflow-x: auto; border-radius: 7px; color: #dcebe6; background: #1b302e; font: 9px/1.55 Consolas,"Courier New",monospace; }
+.note { display: flex; align-items: center; gap: 10px; margin-top: 12px; padding: 11px 13px; border: 1px solid #e6ece8; border-radius: 9px; background: rgba(255,255,255,.75); }
+.note-icon { display: grid; width: 23px; height: 23px; flex: 0 0 23px; place-items: center; border-radius: 7px; color: var(--green); background: #e4f4ef; font: 700 12px Georgia,serif; }
+.note p { margin: 0; color: #667874; font-size: 10px; line-height: 1.55; }
+.note strong { color: #243b39; }
+.note code { color: #236a59; font: 9px Consolas,monospace; }
+.site-footer { display: flex; justify-content: space-between; gap: 12px; padding: 17px 2px 22px; color: #899793; font-size: 9px; }
+@media(max-width:600px) {
+    .site-header { height: 60px; padding: 0 16px; }
+    .page { width: calc(100% - 24px); }
+    .intro { padding: 29px 0 16px; }
+    .formula { flex-wrap: wrap; gap: 8px; }
+    .formula p { flex-basis: calc(100% - 43px); }
+    .formula > code { margin-left: 38px; }
+    .examples { grid-template-columns: 1fr; }
+    .description { min-height: 0; }
+    .example-card { padding: 15px; }
+}
+@media(max-width:380px) {
+    .course-label { font-size: 8px; }
+    .page { width: calc(100% - 20px); }
+    .formula { padding: 10px; }
+    .frame-label { font-size: 7px; }
+}

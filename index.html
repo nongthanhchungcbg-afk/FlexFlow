@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thực hành CSS Flexbox với thuộc tính viết tắt flex-flow.">
+    <title>Thực hành CSS | flex-flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header"><a class="brand" href="#"><span class="brand-mark">F</span><span>Flex Lab</span></a><span class="course-label">CSS · FLEXBOX</span></header>
+    <main class="page">
+        <section class="intro"><p class="eyebrow">BÀI THỰC HÀNH</p><h1>Khám phá <span>flex-flow</span></h1><p class="intro-copy">Một thuộc tính viết tắt, hai điều khiển: hướng sắp xếp và cách bọc các Flex Items.</p></section>
+        <section class="formula"><span class="formula-icon">ƒ</span><p><strong>flex-flow</strong> = flex-direction + flex-wrap</p><code>flex-flow: &lt;direction&gt; &lt;wrap&gt;;</code></section>
+        <section class="examples">
+            <article class="example-card">
+                <div class="card-heading"><div><p class="eyebrow">VÍ DỤ 01</p><h2>row nowrap</h2></div><span class="badge">MẶC ĐỊNH</span></div>
+                <p class="description">Các item xếp theo thứ tự thông thường trên một hàng và không xuống dòng.</p>
+                <div class="demo-frame">
+                    <div class="frame-label"><span>FLEX CONTAINER</span><code>flex-flow: row nowrap</code></div>
+                    <div class="container row-demo" aria-label="Ba item theo hàng từ trái sang phải, không bọc">
+                        <div class="item"><span>01</span>Item 1</div><div class="item"><span>02</span>Item 2</div><div class="item"><span>03</span>Item 3</div>
+                    </div>
+                    <div class="direction"><span>MAIN AXIS</span><span class="arrow">→</span><span>Không xuống dòng</span></div>
+                </div>
+                <pre class="code"><code>.container {
+  display: flex;
+  flex-flow: row nowrap;
+}</code></pre>
+            </article>
+            <article class="example-card">
+                <div class="card-heading"><div><p class="eyebrow">VÍ DỤ 02</p><h2>row-reverse nowrap</h2></div><span class="badge reverse-badge">ĐẢO HƯỚNG</span></div>
+                <p class="description">Cùng một hàng không bọc; chiều sắp xếp được đảo ngược từ phải sang trái.</p>
+                <div class="demo-frame">
+                    <div class="frame-label"><span>FLEX CONTAINER</span><code>flex-flow: row-reverse nowrap</code></div>
+                    <div class="container reverse-demo" aria-label="Ba item theo hàng từ phải sang trái, không bọc">
+                        <div class="item"><span>01</span>Item 1</div><div class="item"><span>02</span>Item 2</div><div class="item"><span>03</span>Item 3</div>
+                    </div>
+                    <div class="direction reverse-direction"><span>MAIN AXIS</span><span class="arrow">←</span><span>Thứ tự hiển thị đảo chiều</span></div>
+                </div>
+                <pre class="code"><code>.container {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}</code></pre>
+            </article>
+        </section>
+        <section class="note"><span class="note-icon">i</span><p><strong>Ghi nhớ:</strong> <code>row-reverse</code> đảo hướng bố trí; nội dung và thứ tự DOM vẫn không đổi. <code>nowrap</code> giữ items trên cùng một dòng.</p></section>
+        <footer class="site-footer"><span>Thực hành CSS Flexbox</span><span>HTML · CSS</span></footer>
+    </main>
+</body>
+</html>
